@@ -1,0 +1,18 @@
+@import "../../scss/variables";
+
+.toggle-theme-button {
+  color: var(--text-theme-color);
+  position: relative;
+  &:hover{
+    color: var(--text-theme-color);
+  }
+}
+
+.toggle-theme-button::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  height: 70%;
+  width: 1px;
+  background-color: var(--text-theme-color);
+}

@@ -1,0 +1,15 @@
+@import "../../scss/variables";
+
+.notification-button{
+    color: var(--text-theme-color);
+    position: relative;
+}
+
+.notification-button::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    height: 70%;
+    width: 1px;
+    background-color: var(--text-theme-color);
+}

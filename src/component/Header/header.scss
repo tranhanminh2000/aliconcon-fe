@@ -1,0 +1,138 @@
+@import '../../scss/_variables.scss';
+
+.fs-header {
+    z-index: 10;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid $primary;
+
+    .top {
+        background-color: var(--bg-theme-color);
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            .email-text{
+                color: var(--text-theme-color);
+            }
+            .notification-button {
+
+            }
+
+            .cart-shopping-button {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .search {
+        box-shadow: $box-shadow;
+        background-color: $gray-900;
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+
+            .logo {
+                text-decoration: none;
+
+                .logo-text {
+                    font-size: 2rem;
+                    font-style: italic;
+                    border: 1px;
+
+                    .first {
+                        color: $primary;
+                        position: relative;
+                    }
+
+                    .first::before {
+                        content: "";
+                        position: absolute;
+                        bottom: -5px;
+                        left: -10px;
+                        width: 20px;
+                        display: block;
+                        background-color: $light;
+                        height: 2px;
+                    }
+
+                    .first::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -5px;
+                        left: -10px;
+                        width: 20px;
+                        transform: rotate(-78deg);
+                        transform-origin: left;
+                        display: block;
+                        background-color: $light;
+                        height: 2px;
+                    }
+
+                    .second {
+                        position: relative;
+
+                    }
+
+                    .second::before {
+                        content: "";
+                        position: absolute;
+                        top: -5px;
+                        right: -15px;
+                        width: 20px;
+                        display: block;
+                        background-color: $primary;
+                        height: 2px;
+                    }
+
+                    .second::after {
+                        content: "";
+                        position: absolute;
+                        top: -5px;
+                        right: -15px;
+                        width: 20px;
+                        transform: rotate(-78deg);
+                        transform-origin: right;
+                        display: block;
+                        background-color: $primary;
+                        height: 2px;
+                    }
+                }
+            }
+
+
+            .search-bar {
+                width: 65%;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+
+    .navbar {
+        background: linear-gradient(180deg, $gray-800 30%, $gray-900 70%);
+        border-top: solid 1px $gray-600;
+        .navbar-list {
+            border: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+            flex-direction: row;
+            align-items: center;
+            gap: 1rem;
+            .nav-item {
+                display: inline-block;
+                .nav-link {
+                    color: $light;
+                    font-size: 1.1rem;
+                    transition: all 1s ease-in-out;
+                    &.active{
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+    }
+}

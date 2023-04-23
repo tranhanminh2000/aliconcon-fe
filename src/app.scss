@@ -1,0 +1,34 @@
+@import "./scss/_custom.scss"; // Custom Bootstrap (Override variable)
+@import "./scss/_utilities.scss";
+@import "./scss/_animations.scss";
+@import "./scss/_fonts.scss";
+
+*{
+  // transition: all 0.2s ease;
+}
+/* HTML tag */
+:root {
+  --bg-theme-color: #{map-get(map-get($themes, light), bg-color)};
+  --text-theme-color: #{map-get(map-get($themes, light), text-color)};
+  --shadow-theme-color: 0 0px 20px 0 #{map-get(map-get($themes, light), shadow-color)};
+}
+
+html[data-theme=dark-mode] {
+  --bg-theme-color: #{map-get(map-get($themes, dark), bg-color)};
+  --text-theme-color: #{map-get(map-get($themes, dark), text-color)};
+  --shadow-theme-color: 0 0px 20px 0 #{map-get(map-get($themes, dark), shadow-color)};
+}
+
+/* Global */
+.app {
+  font-family: $font-family-base;
+  background-color: $primary;
+  height: fit-content;
+}
+
+section.section{
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow-theme-color);
+  border-radius: $border-radius;
+  overflow: hidden;
+}

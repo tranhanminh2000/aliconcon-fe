@@ -1,0 +1,14 @@
+.search-bar {
+  height: 100%;
+  input {
+    background-color: var(--bg-theme-color);
+    color: var(--text-theme-color);
+    &:focus {
+      background-color: var(--bg-theme-color);
+      color: var(--text-theme-color);
+    }
+  }
+  button {
+    padding: 0.375rem 0.75rem;
+  }
+}

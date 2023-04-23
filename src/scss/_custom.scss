@@ -1,0 +1,5 @@
+/* Import variable to override bootstrap variable  */
+@import './_variables.scss';
+
+/* Import bootstrap library */
+@import '~bootstrap/scss/bootstrap.scss';
