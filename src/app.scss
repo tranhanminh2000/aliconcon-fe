@@ -1,0 +1,9 @@
+@import './scss/_custom.scss';      // Custom Bootstrap (Override variable)
+@import './scss/_utilities.scss';
+@import './scss/_animations.scss';
+@import './scss/_fonts.scss';
+
+.app {
+  font-family: $font-family-base;
+  background-color: $primary;
+}
